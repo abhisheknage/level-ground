@@ -1,0 +1,242 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  /* line-height: normal; */
+  font-family: 'Oswald', sans-serif;
+}
+body *{
+  /* border: 0.5px solid yellow; */
+  text-align: center;
+}
+p{
+  line-height: 1.5;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-color: rgb(113, 129, 150);
+  position: relative;
+  padding: 0px 0;
+  /* border: 0.5px solid rgb(113, 129, 150); */
+  line-height: 1.5;
+  margin: 0;
+}
+header *{
+  background-color: rgb(113, 129, 150);
+  text-align: left;
+}
+header button{
+  background-color: white;
+  color: rgb(113, 129, 150);
+  border-radius: 3px;
+  border: none;
+}
+
+footer {
+
+}
+ul{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/******************************************
+/* ADDITIONAL STYLES FOR HEADER
+/*******************************************/
+header{
+  position: relative;
+}
+header *{
+  color: white;
+}
+header ul{
+  padding: 0 20px;
+}
+header ul li{
+  list-style: none;
+  display: inline-block;
+  width: 100px;
+}
+.logo{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 1.3rem;
+}
+.donate-button{
+  float: right;
+}
+/******************************************
+/* ADDITIONAL STYLES FOR CONTENT-MAIN
+/*******************************************/
+.content-main{
+  background-color: rgb(113, 129, 150);
+  padding: 0 10px;
+  text-align: center;
+  /* max-width: 600px; */
+}
+.content-main-info{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.content-main h1{
+  color: white;
+  font-size: xx-large;
+  margin: 0;
+  padding: 40px 0 0px 0;
+}
+.content-main p{
+  color: white;
+  font-weight: 400;
+  font-size: large;
+  line-height: 1.5;
+  padding:20px 0;
+  /* margin: 0; */
+  /* word-spacing: 0.25em; */
+}
+.content-main h3{
+  padding-bottom: 100px;
+  margin: 0;
+  font-weight: 200;
+}
+.content-main a{
+  margin-top: 10px;
+  color: white;
+  
+  /* padding-bottom: 100px; */
+}
+/******************************************
+/* ADDITIONAL STYLES FOR CONTENT-WHY
+/*******************************************/
+.content-why{
+  background-color: white;
+  padding: 50px 10px;
+  position: relative;
+  height: auto;
+  max-width: 800px;
+  margin:0 auto;
+}
+.content-why h2{
+  margin-top: 0;
+}
+.content-why p{
+  /* max-width: 600px; */
+  margin: 0 auto;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+}
+
+/******************************************
+/* ADDITIONAL STYLES FOR CONTENT-CARDS
+/*******************************************/
+.content-cards{
+  background-color: rgb(223, 227, 230);
+  padding:0px 75px;
+}
+.content-card{
+  width: 50%;
+  margin: 0;
+  float: left;
+  padding: 0px 20px;
+  margin: 75px 0;
+  
+}
+.content-card-img{
+  width: 80%;
+  height: 200px;
+  background-color: rgb(113, 129, 150);
+  margin: 0 auto;
+}
+@media (max-width:800px){
+  .content-card{
+    width: 100%;    
+  }
+  .content-card:first-of-type{
+    margin-bottom:0;
+  }
+}
+/******************************************
+/* ADDITIONAL STYLES FOR CONTENT-VOLUNTEER
+/*******************************************/
+.content-volunteer{
+  padding: 75px 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+/******************************************
+/* ADDITIONAL STYLES FOR FOOTER
+/*******************************************/
+footer{
+  background-color: rgb(22, 34, 48);
+  color: white;
+  padding: 20px;
+}
+footer *{
+  text-align: left;
+  color: white;
+}
+.footer-top{
+  position: relative;
+  padding-bottom: 20px;
+}
+.links{
+  max-width: 300px;
+  float: left;
+}
+.links h5{
+  color: rgb(113, 129, 150);
+}
+.links a{
+  padding-right: 10px;
+}
+
+.address{
+  max-width: 300px;
+  float: right;
+  margin:auto 0;
+  position: absolute;
+  top: 50%;
+  right:0;
+  transform: translateY(-50%);
+}
+.address p{
+  margin:0;
+}
+.copyright-info p{
+  margin: 0;
+  padding: 10px 0px 5px 0;
+  border-top: 1px solid white;
+}
